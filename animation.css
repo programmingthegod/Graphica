@@ -1,0 +1,99 @@
+.ul1 li:hover ,li.selected,.ul1 li a:hover{
+    color: grey;
+    cursor: pointer;
+    background-color: none;
+    color: white;
+    transition: font-size 0.5s ease-in;
+    background-color: whitesmoke;
+    color: black;
+}
+
+@keyframes border_change1 {
+    30%{
+        border: 0.6vh solid #e0992e;
+    }
+    60%{
+        border: 0.6vh solid #344e9e;
+    }
+    80%{
+        border: 0.6vh solid #5da73f;
+    }
+}
+
+@keyframes machine {
+    0%{
+        background-image: url('/images/machine_learning.jpeg') ;
+    }
+    100%{
+        background-image: url('/images/machine2.png');
+        height: 30vh;
+        width: 22vw;
+    }
+}
+
+.data_structures img:hover{
+    background-image: url(/images/data_structures.jpg);
+    transition: background-image 5sec ease-in;
+    background-image: url(/images/machine2.png);
+    height: 30vh;
+    width: 22vw;
+}
+
+@keyframes upgrade {
+    0%{
+        color: white;
+        /* padding: 1vh; */
+    }
+    30%{
+        color:olive;
+        /* padding: 1.5vh; */
+    }
+    100%{
+        color: rgb(196, 171, 29);
+        /* padding: 2vh; */
+    }
+}
+
+@keyframes border_animation{
+    30%{
+        border: 0.5vh solid rgb(218, 69, 69);
+    }
+    60%{
+        border: 0.5vh solid rgb(49, 194, 93);
+    }
+    90%{
+        border: 0.5vh solid rgb(34, 181, 201);
+    }
+}
+
+@keyframes text_animation {
+    30%{
+        color: rgb(218, 69, 69);;
+    }
+    60%{
+        color: rgb(49, 194, 93);
+    }
+    90%{
+        color: rgb(34, 181, 201);
+    }
+}
+
+.resize {
+    position:relative;
+    height:281px;
+    width:450px;
+    margin:0 auto;
+  }
+  
+.resize img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.resize img.top:hover {
+    opacity:0;
+}
